@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import MapView from "./components/MapView.vue";
+import MapView from "./components/Map/MapView.vue";
 </script>

@@ -13,7 +13,7 @@
 <script setup>
 import { ref } from "vue";
 import WaterList from "../components/WaterList.vue";
-import WaterCard from "../components/WaterCard.vue";
+import WaterCard from "../components/Map/MapPanel.vue";
 
 const selectedWater = ref(null);
 

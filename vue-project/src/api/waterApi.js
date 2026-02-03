@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "http://127.0.0.1:8000";
 
 export async function fetchWaterObjects() {
   const res = await axios.get(`${API_BASE}/water-objects`);
@@ -9,7 +9,7 @@ export async function fetchWaterObjects() {
 
 export async function searchWaterObjects(query) {
   const res = await axios.get(
-    `${API_BASE}/water-objects/search?query=${encodeURIComponent(query)}`,
+    `${API_BASE}/water-objects/search?q=${encodeURIComponent(query)}`,
   );
   return res.data;
 }
